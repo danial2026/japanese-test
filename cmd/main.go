@@ -10,24 +10,11 @@ import (
 	"time"
 )
 
-type Type int
-
-const (
-	HIRAGANA Type = iota
-	KATAKANA
-	KANJI
-)
-
-type Answer struct {
-	Id     int   `json:"id"`
-	Type   Type  `json:"type"`
-	Answer bool  `json:"answer"`
-	Time   int64 `json:"time"`
-}
-
 type KanaLetter struct {
 	Japanese string `json:"japanese"`
 	English  string `json:"english"`
+	Repeat   int64  `json:"repeat"`
+	Score    int64  `json:"score"`
 }
 
 func main() {
@@ -40,15 +27,13 @@ func main() {
 	fmt.Scanln(&userResponse)
 
 	kanaList := []KanaLetter{}
-	var listType Type
+	var listType string
 
 	switch userResponse {
 	case 1:
-		kanaList = getListFromJson("hiragana.json")
-		listType = HIRAGANA
+		listType = "hiragana"
 	case 2:
-		kanaList = getListFromJson("katakana.json")
-		listType = KATAKANA
+		listType = "katakana"
 	case 3:
 		fmt.Println("in development")
 		/*
@@ -75,6 +60,9 @@ func main() {
 		fmt.Println("Enter a number between 1 to 3")
 		return
 	}
+
+	kanaList = getListFromJson("./answers/", listType+".json")
+
 	fmt.Println("-------------------------------------------")
 
 	fmt.Println(" ⮀  choose mod (default easy) ")
@@ -103,7 +91,7 @@ func main() {
 	questionsCounter := 0
 	correctAnswersCounter := 0
 
-	answers := []Answer{}
+	// answers := []Answer{}
 
 	for allAnswersCorrect == true {
 		s1 := rand.NewSource(time.Now().UnixNano())
@@ -112,6 +100,7 @@ func main() {
 
 		fmt.Print("   " + kanaList[randonNumber].Japanese)
 		questionsCounter = questionsCounter + 1
+		kanaList[randonNumber].Repeat = kanaList[randonNumber].Repeat + 1
 
 		fmt.Print(" ⮕  ")
 		var userResponse string
@@ -120,44 +109,34 @@ func main() {
 		if strings.ToLower(userResponse) != kanaList[randonNumber].English {
 
 			fmt.Println(" ✘ " + kanaList[randonNumber].English)
-			heartsCounter = heartsCounter - 1
-			if heartsCounter < 0 {
+			if heartsCounter <= 0 {
 				allAnswersCorrect = false
 			} else {
 				fmt.Println(" 💔 ", heartsCounter, "/", allHearts)
 			}
+			heartsCounter = heartsCounter - 1
 
-			answers = append(answers, Answer{
-				Id:     randonNumber,
-				Answer: false,
-				Type:   listType,
-				Time:   time.Now().Unix(),
-			})
+			kanaList[randonNumber].Score = kanaList[randonNumber].Score - 1
 		} else {
 			fmt.Println(" ✔  correct ")
 			correctAnswersCounter = correctAnswersCounter + 1
 
-			answers = append(answers, Answer{
-				Id:     randonNumber,
-				Answer: true,
-				Type:   listType,
-				Time:   time.Now().Unix(),
-			})
+			kanaList[randonNumber].Score = kanaList[randonNumber].Score + 1
 		}
 	}
 
-	file, _ := json.MarshalIndent(answers, "", " ")
-	jsonFileName := "answers/" + fmt.Sprint(time.Now().Unix()) + "-answer"
-
+	file, _ := json.MarshalIndent(kanaList, "", " ")
+	jsonFileName := "answers/" + listType
 	_ = ioutil.WriteFile(jsonFileName+".json", file, 0644)
 
 	fmt.Println(" answered correctly to ", correctAnswersCounter, " from ", questionsCounter)
 }
 
-func getListFromJson(filename string) []KanaLetter {
-	err := checkFile(filename)
-	if err != nil {
-		fmt.Println(err)
+func getListFromJson(path string, fileName string) []KanaLetter {
+	filename := path + fileName
+	doesErr := checkFile(filename)
+	if doesErr != true {
+		filename = fileName
 	}
 
 	file, err := ioutil.ReadFile(filename)
@@ -171,13 +150,10 @@ func getListFromJson(filename string) []KanaLetter {
 	return data
 }
 
-func checkFile(filename string) error {
+func checkFile(filename string) bool {
 	_, err := os.Stat(filename)
 	if os.IsNotExist(err) {
-		_, err := os.Create(filename)
-		if err != nil {
-			return err
-		}
+		return false
 	}
-	return nil
+	return true
 }
