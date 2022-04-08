@@ -4,9 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
-	"japaneseapp/domain/hiragana"
-	"japaneseapp/domain/katakana"
 	"math/rand"
+	"os"
 	"strings"
 	"time"
 )
@@ -26,6 +25,11 @@ type Answer struct {
 	Time   int64 `json:"time"`
 }
 
+type KanaLetter struct {
+	Japanese string `json:"japanese"`
+	English  string `json:"english"`
+}
+
 func main() {
 	fmt.Println(" ⮀  choose a kana system or kanji words")
 	fmt.Println(" 1.  hiragana")
@@ -35,23 +39,27 @@ func main() {
 	var userResponse int
 	fmt.Scanln(&userResponse)
 
-	japaneseList := []string{}
-	englishList := []string{}
+	kanaList := []KanaLetter{}
 	var listType Type
 
 	switch userResponse {
 	case 1:
-		hiraganaLetters := hiragana.NewHiragana()
-		japaneseList = hiraganaLetters.Japanese()
-		englishList = hiraganaLetters.English()
+		kanaList = getListFromJson("hiragana.json")
 		listType = HIRAGANA
 	case 2:
-		katakanaLetters := katakana.NewKatakana()
-		japaneseList = katakanaLetters.Japanese()
-		englishList = katakanaLetters.English()
+		kanaList = getListFromJson("katakana.json")
 		listType = KATAKANA
 	case 3:
 		fmt.Println("in development")
+		/*
+		 TODO : read the json file
+		 first pick what u wanna do
+		 1. review kanji words
+		 2. add kanji
+
+		 for add kanji : https://dev.to/evilcel3ri/append-data-to-json-in-go-5gbj
+		 for review kanji words just read the json file
+		*/
 		return
 	default:
 		fmt.Println("Enter a number between 1 to 3")
@@ -90,18 +98,18 @@ func main() {
 	for allAnswersCorrect == true {
 		s1 := rand.NewSource(time.Now().UnixNano())
 		r1 := rand.New(s1)
-		randonNumber := r1.Intn(len(japaneseList))
+		randonNumber := r1.Intn(len(kanaList))
 
-		fmt.Print("   " + japaneseList[randonNumber])
+		fmt.Print("   " + kanaList[randonNumber].Japanese)
 		questionsCounter = questionsCounter + 1
 
 		fmt.Print(" ⮕  ")
 		var userResponse string
 		fmt.Scanln(&userResponse)
 
-		if strings.ToLower(userResponse) != englishList[randonNumber] {
+		if strings.ToLower(userResponse) != kanaList[randonNumber].English {
 
-			fmt.Println(" ✘ " + englishList[randonNumber])
+			fmt.Println(" ✘ " + kanaList[randonNumber].English)
 			heartsCounter = heartsCounter - 1
 			if heartsCounter < 0 {
 				allAnswersCorrect = false
@@ -134,4 +142,32 @@ func main() {
 	_ = ioutil.WriteFile(jsonFileName+".json", file, 0644)
 
 	fmt.Println(" answered correctly to ", correctAnswersCounter, " from ", questionsCounter)
+}
+
+func getListFromJson(filename string) []KanaLetter {
+	err := checkFile(filename)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	file, err := ioutil.ReadFile(filename)
+	if err != nil {
+		fmt.Println(err)
+	}
+
+	data := []KanaLetter{}
+	json.Unmarshal(file, &data)
+
+	return data
+}
+
+func checkFile(filename string) error {
+	_, err := os.Stat(filename)
+	if os.IsNotExist(err) {
+		_, err := os.Create(filename)
+		if err != nil {
+			return err
+		}
+	}
+	return nil
 }
