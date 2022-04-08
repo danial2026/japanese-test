@@ -52,13 +52,23 @@ func main() {
 	case 3:
 		fmt.Println("in development")
 		/*
-		 TODO : read the json file
-		 first pick what u wanna do
-		 1. review kanji words
-		 2. add kanji
+			 TODO : read the json file
+			 first pick what u wanna do
+			 1. review kanji words
+			 2. add kanji
+			 3. print all kanji words
 
-		 for add kanji : https://dev.to/evilcel3ri/append-data-to-json-in-go-5gbj
-		 for review kanji words just read the json file
+			 for add kanji : https://dev.to/evilcel3ri/append-data-to-json-in-go-5gbj
+			 for review kanji words just read the json file
+
+			 use this to print all kanji words :
+
+				w := tabwriter.NewWriter(os.Stdout, 1, 1, 1, ' ', 0)
+				for _, j := range kanaList {
+					fmt.Fprintln(w, j.English+"\t"+j.Japanese)
+				}
+
+				w.Flush()
 		*/
 		return
 	default:

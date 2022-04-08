@@ -1,0 +1,463 @@
+[{
+        "Japanese": "こんにちは",
+        "Hiragana": "こんにちは",
+        "Speaking": "Konnichiwa",
+        "Meaning": "Hello",
+        "Description": ""
+    },
+    {
+        "Japanese": "おはようございます",
+        "Hiragana": "おはようございます",
+        "Speaking": "Ohayou gozaimasu",
+        "Meaning": "good morning",
+        "Description": ""
+    },
+    {
+        "Japanese": "こんばんは",
+        "Hiragana": "こんばんは",
+        "Speaking": "Konbanwa",
+        "Meaning": "Good evening",
+        "Description": ""
+    },
+    {
+        "Japanese": "もしもし",
+        "Hiragana": "もしもし",
+        "Speaking": "Moshi moshi",
+        "Meaning": "hello",
+        "Description": "(but only if you’re on the phone or something like Skype)"
+    },
+    {
+        "Japanese": "お元気ですか",
+        "Hiragana": "おげんきですか",
+        "Speaking": "Ogenki desu ka",
+        "Meaning": "how are you",
+        "Description": ""
+    },
+    {
+        "Japanese": "元気です",
+        "Hiragana": "げんきです",
+        "Speaking": "Genki desu",
+        "Meaning": "fine",
+        "Description": "I’m good/I’ve been doing well, thanks"
+    },
+    {
+        "Japanese": "お久しぶりですね",
+        "Hiragana": "おひさしぶりですね",
+        "Speaking": "Ohisashiburi desu ne",
+        "Meaning": "long time no see",
+        "Description": ""
+    },
+    {
+        "Japanese": "______-さんも？",
+        "Hiragana": "______ まいなす さんも？",
+        "Speaking": "_______–san mo?",
+        "Meaning": "_______-too?",
+        "Description": "(Hint: fill in the blank with your friend’s name. This is a great response to things like “How are you?” because you can say, “I’m good! And you?”)"
+    },
+    {
+        "Japanese": "名前は何ですか",
+        "Hiragana": "なまえは なんですか",
+        "Speaking": "Namae wa nan desu ka?",
+        "Meaning": "What is your name",
+        "Description": ""
+    },
+    {
+        "Japanese": "私の名前は＿＿です",
+        "Hiragana": "わたしの なまえは ＿＿です",
+        "Speaking": "Watashi no namae wa _____ desu",
+        "Meaning": "My name is",
+        "Description": ""
+    },
+    {
+        "Japanese": "どこから来ましたか",
+        "Hiragana": "どこから きましたか",
+        "Speaking": "Doko kara kimashita ka",
+        "Meaning": "Where are you from",
+        "Description": ""
+    },
+    {
+        "Japanese": "私は＿＿から来ました",
+        "Hiragana": "わたしは ＿＿から きました",
+        "Speaking": "Watashi wa ______ kara kimashita",
+        "Meaning": "I am coming from",
+        "Description": ""
+    },
+    {
+        "Japanese": "そうですか",
+        "Hiragana": "そうですか",
+        "Speaking": "Sou desu ka?",
+        "Meaning": "I see",
+        "Description": "Is that so?/Really?/I see  (Hint: this is a great thing to say after learning where someone is from, what they do, or other facts about their life.)"
+    },
+    {
+        "Japanese": "ありがとうございます",
+        "Hiragana": "ありがとうございます",
+        "Speaking": "Arigatou gozaimasu",
+        "Meaning": "thank you",
+        "Description": ""
+    },
+    {
+        "Japanese": "どういたしまして",
+        "Hiragana": "どういたしまして",
+        "Speaking": "Douitashimashite",
+        "Meaning": "you're welcome",
+        "Description": ""
+    },
+    {
+        "Japanese": "すみません",
+        "Hiragana": "すみません",
+        "Speaking": "Sumimasen",
+        "Meaning": "Excuse me",
+        "Description": "(Hint: you can use this for anything from apologising for stumbling into someone on the train to asking for help or asking for people to move out of your way.)"
+    },
+    {
+        "Japanese": "ごめんなさい",
+        "Hiragana": "ごめんなさい",
+        "Speaking": "Gomen nasai",
+        "Meaning": "sorry",
+        "Description": "(Hint: didn’t we already cover “I’m sorry”? Gomen nasai is less “excuse me” and more “I’m truly sorry from the bottom of my heart.” Use it if you knocked something over and broke it, not if you interrupted someone’s stroll to ask for directions.)"
+    },
+    {
+        "Japanese": "よろしくおねがいします",
+        "Hiragana": "よろしく おねがいします",
+        "Speaking": "Yoroshiku onegaishimasu",
+        "Meaning": "Thank you for your consideration",
+        "Description": "(Hint: this one isn’t used in its literal sense most of the time; it’s a way to say “thank you” to someone you are counting on or indebted to. For example, if you're starting out at a new job in Japan, you might introduce yourself and then add this at the end. You might also use it if you’ve asked someone a favour, such as to show you around or give you directions.)"
+    },
+    {
+        "Japanese": "いただきます",
+        "Hiragana": "いただきます",
+        "Speaking": "Itadakimasu",
+        "Meaning": "I'll enjoy having this",
+        "Description": "(Hint: say this before meals as a way to politely say you’re going to begin enjoying your food.)"
+    },
+    {
+        "Japanese": "ごちそうさまでした",
+        "Hiragana": "ごちそうさまでした",
+        "Speaking": "Gochisousama deshita",
+        "Meaning": "Thank you for the meal",
+        "Description": "(Hint: say this after meals as a way to say thank you.)"
+    },
+    {
+        "Japanese": "英語ていうのは",
+        "Hiragana": "えいごていうのは",
+        "Speaking": "Eigo te iu no wa…",
+        "Meaning": "I say English",
+        "Description": "And in English, that’s…?"
+    },
+    {
+        "Japanese": "わかりません",
+        "Hiragana": "わかりません",
+        "Speaking": "Wakarimasen",
+        "Meaning": "I do not know",
+        "Description": ""
+    },
+    {
+        "Japanese": "知りません",
+        "Hiragana": "しりません",
+        "Speaking": "Shirimasen",
+        "Meaning": "I do not know",
+        "Description": ""
+    },
+    {
+        "Japanese": "忘れました",
+        "Hiragana": "わすれました",
+        "Speaking": "Wasuremashita",
+        "Meaning": "Forgot",
+        "Description": ""
+    },
+    {
+        "Japanese": "もっとゆっくり下さい",
+        "Hiragana": "もっと ゆっくり ください",
+        "Speaking": "Motto yukkuri kudasai",
+        "Meaning": "Please take more slowly",
+        "Description": ""
+    },
+    {
+        "Japanese": "もう一度下さい",
+        "Hiragana": "もういちど ください",
+        "Speaking": "Mou ichido kudasai",
+        "Meaning": "Please give me a lot",
+        "Description": ""
+    },
+    {
+        "Japanese": "日本語でペラペラではないです",
+        "Hiragana": "にほんごで ぺらぺらではないです",
+        "Speaking": "Nihongo de perapera de wa nai desu",
+        "Meaning": "It is not a perpella in Japanese",
+        "Description": "(Hint: you’re speaking Japanese already! So you can’t say “I don’t know Japanese at all,” right?)"
+    },
+    {
+        "Japanese": "＿＿ていうの意味は何ですか",
+        "Hiragana": "＿＿ていうの いみは なんですか",
+        "Speaking": "___ te iu no imi wa nan desu ka?",
+        "Meaning": "What is the meaning of __",
+        "Description": ""
+    },
+    {
+        "Japanese": "手伝ってくれませんか",
+        "Hiragana": "てつだってくれませんか",
+        "Speaking": "Tetsudatte kuremasen ka?",
+        "Meaning": "Will you help me",
+        "Description": ""
+    },
+    {
+        "Japanese": "どこですか",
+        "Hiragana": "どこですか",
+        "Speaking": "Doko desu ka?",
+        "Meaning": "Where",
+        "Description": ""
+    },
+    {
+        "Japanese": "いつですか",
+        "Hiragana": "いつですか",
+        "Speaking": "Itsu desu ka?",
+        "Meaning": "when",
+        "Description": ""
+    },
+    {
+        "Japanese": "どうして",
+        "Hiragana": "どうして",
+        "Speaking": "Doushite?",
+        "Meaning": "why",
+        "Description": ""
+    },
+    {
+        "Japanese": "どちらですか",
+        "Hiragana": "どちらですか",
+        "Speaking": "Dochira desu ka?",
+        "Meaning": "Which one",
+        "Description": ""
+    },
+    {
+        "Japanese": "何ですか",
+        "Hiragana": "なんですか",
+        "Speaking": "Nan desu ka?",
+        "Meaning": "what is it",
+        "Description": ""
+    },
+    {
+        "Japanese": "だれですか",
+        "Hiragana": "だれですか",
+        "Speaking": "Dare desu ka?",
+        "Meaning": "who",
+        "Description": ""
+    },
+    {
+        "Japanese": "今何時ですか",
+        "Hiragana": "いま なんじですか",
+        "Speaking": "Ima nanji desu ka?",
+        "Meaning": "What time is it",
+        "Description": ""
+    },
+    {
+        "Japanese": "今",
+        "Hiragana": "いま",
+        "Speaking": "Ima nanji desu ka?",
+        "Meaning": "now",
+        "Description": ""
+    },
+    {
+        "Japanese": "後で",
+        "Hiragana": "あとで",
+        "Speaking": "Ato de",
+        "Meaning": "later",
+        "Description": ""
+    },
+    {
+        "Japanese": "今日",
+        "Hiragana": "きょう",
+        "Speaking": "Kyou",
+        "Meaning": "today",
+        "Description": ""
+    },
+    {
+        "Japanese": "昨日",
+        "Hiragana": "さくじつ",
+        "Speaking": "Kinou",
+        "Meaning": "yesterday",
+        "Description": ""
+    },
+    {
+        "Japanese": "明日",
+        "Hiragana": "あす",
+        "Speaking": "Ashita",
+        "Meaning": "tomorrow",
+        "Description": ""
+    },
+    {
+        "Japanese": "毎日",
+        "Hiragana": "まいにち",
+        "Speaking": "Mainichi",
+        "Meaning": "every day",
+        "Description": ""
+    },
+    {
+        "Japanese": "何歳ですか",
+        "Hiragana": "なんさいですか",
+        "Speaking": "Nansai desu ka?",
+        "Meaning": "how old you",
+        "Description": ""
+    },
+    {
+        "Japanese": "どこに住んでいますか",
+        "Hiragana": "どこに すんでいますか",
+        "Speaking": "Doko ni sundeimasu ka?",
+        "Meaning": "Where do you live",
+        "Description": ""
+    },
+    {
+        "Japanese": "兄弟がいますか",
+        "Hiragana": "きょうだいが いますか",
+        "Speaking": "Kyoudai ga imasu ka?",
+        "Meaning": "Do you have a brother",
+        "Description": ""
+    },
+    {
+        "Japanese": "いくらですか",
+        "Hiragana": "いくらですか",
+        "Speaking": "Ikura desu ka?",
+        "Meaning": "How much is it",
+        "Description": ""
+    },
+    {
+        "Japanese": "これはなんですか",
+        "Hiragana": "これは なんですか",
+        "Speaking": "Kore wa nan desu ka?",
+        "Meaning": "what is this",
+        "Description": ""
+    },
+    {
+        "Japanese": "それはなんですか",
+        "Hiragana": "それは なんですか",
+        "Speaking": "Sore wa nan desu ka?",
+        "Meaning": "What is it",
+        "Description": ""
+    },
+    {
+        "Japanese": "あれはなんですか",
+        "Hiragana": "あれは なんですか",
+        "Speaking": "Are we nan desu ka?",
+        "Meaning": "What is that",
+        "Description": "(Hint: Use “kore” when something is close to you, “sore” when something is away from you but close to the person you’re speaking to, and “are” when something is far away from both of you.)"
+    },
+    {
+        "Japanese": "トイレはどこですか",
+        "Hiragana": "といれは どこですか",
+        "Speaking": "Toire wa doko desu ka?",
+        "Meaning": "Where is the restroom",
+        "Description": ""
+    },
+    {
+        "Japanese": "はい",
+        "Hiragana": "はい",
+        "Speaking": "Hai",
+        "Meaning": "Yes",
+        "Description": ""
+    },
+    {
+        "Japanese": "いいえ",
+        "Hiragana": "いいえ",
+        "Speaking": "Iie",
+        "Meaning": "No",
+        "Description": ""
+    },
+    {
+        "Japanese": "まだまだ",
+        "Hiragana": "まだまだ",
+        "Speaking": "Mada mada",
+        "Meaning": "not yet",
+        "Description": ""
+    },
+    {
+        "Japanese": "かもしれません",
+        "Hiragana": "かもしれません",
+        "Speaking": "Kamoshiremasen",
+        "Meaning": "maybe",
+        "Description": ""
+    },
+    {
+        "Japanese": "時々",
+        "Hiragana": "ときどき",
+        "Speaking": "Tokidoki",
+        "Meaning": "Sometimes",
+        "Description": ""
+    },
+    {
+        "Japanese": "全然",
+        "Hiragana": "ぜんぜん",
+        "Speaking": "Zenzen",
+        "Meaning": "at all",
+        "Description": "Never"
+    },
+    {
+        "Japanese": "いつも",
+        "Hiragana": "いつも",
+        "Speaking": "Itsumo",
+        "Meaning": "everytime",
+        "Description": "Always"
+    },
+    {
+        "Japanese": "たいてい",
+        "Hiragana": "たいてい",
+        "Speaking": "Taitei",
+        "Meaning": "most of the time",
+        "Description": "Usually"
+    },
+    {
+        "Japanese": "私は＿＿です",
+        "Hiragana": "わたしは ＿＿です",
+        "Speaking": "Watashi wa _____ desu",
+        "Meaning": "I am",
+        "Description": "(Hint: you can fill this blank with anything you feel describes you. That might be a “student” (gakusei), “tourist” (kankoukyaku), or even “doctor” (isha)!"
+    },
+    {
+        "Japanese": "大丈夫です",
+        "Hiragana": "だいじょうぶです",
+        "Speaking": "Daijoubu desu",
+        "Meaning": "It's okay",
+        "Description": ""
+    },
+    {
+        "Japanese": "いいです",
+        "Hiragana": "いいです",
+        "Speaking": "Ii desu",
+        "Meaning": "Is good",
+        "Description": ""
+    },
+    {
+        "Japanese": "気を付けて",
+        "Hiragana": "きを つけて",
+        "Speaking": "Ki o tsukete",
+        "Meaning": "take care",
+        "Description": "(Hint: you might say this to someone going on a trip.)"
+    },
+    {
+        "Japanese": "よくできました",
+        "Hiragana": "よく できました",
+        "Speaking": "Yoku dekimashita",
+        "Meaning": "Good job",
+        "Description": ""
+    },
+    {
+        "Japanese": "おめでとうございます",
+        "Hiragana": "おめでとうございます",
+        "Speaking": "Omedetou gozaimasu",
+        "Meaning": "Congratulations",
+        "Description": ""
+    },
+    {
+        "Japanese": "誕生日おめでとう",
+        "Hiragana": "たんじょうび おめでとう",
+        "Speaking": "Tanjoubi omedetou",
+        "Meaning": "happy Birthday",
+        "Description": ""
+    },
+    {
+        "Japanese": "乾杯",
+        "Hiragana": "かんぱい",
+        "Speaking": "Kanpai",
+        "Meaning": "toast",
+        "Description": "(Hint: you should really only go for this one if you actually have a drink of some sort in your hand.)"
+    }
+]
